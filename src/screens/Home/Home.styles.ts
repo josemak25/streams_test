@@ -3,9 +3,6 @@ import {ViewEdgeInsets} from 'typings';
 
 export const Container = styled.View`
   flex: 1;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
   background-color: ${p => p.theme.colors.BACKGROUND};
 `;
 
