@@ -1,6 +1,6 @@
 # Stream test App
 
-NextJS SSR App for finding and managing conferences
+https://user-images.githubusercontent.com/33870502/124524572-7bdffb80-ddf3-11eb-870e-5766f29e7a5e.mp4
 
 ## Getting Started
 
