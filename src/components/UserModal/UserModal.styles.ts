@@ -108,7 +108,7 @@ export const Modal = styled.View.attrs({elevation: 2})`
   padding-bottom: ${p => p.theme.scale(10)}px;
   border-radius: ${p => p.theme.scale(10)}px;
   background-color: ${p => p.theme.colors.GRAY_SIX};
-  width: ${p => p.theme.scale(TABLET_DIMENSION - 100)}px;
-  height: ${p => p.theme.scale(TABLET_DIMENSION - 100)}px;
+  width: ${p => p.theme.scale(TABLET_DIMENSION - 90)}px;
+  height: ${p => p.theme.scale(TABLET_DIMENSION - 90)}px;
   box-shadow: 0px 2px 8px ${p => p.theme.hexToRGB(p.theme.colors.BLACK, 0.15)};
 `;

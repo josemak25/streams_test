@@ -1,5 +1,7 @@
 import React from 'react';
+import {OverlayProvider} from '@app/providers';
 import {IUser} from '@providers/store/users/models';
+import UserModal from '../UserModal';
 
 import {
   Name,
@@ -16,9 +18,7 @@ const UserCard = (props: UserCardProps) => {
 
   const userName = `${name.title} ${name.first} ${name.last}`;
 
-  const _onLongPress = () => {
-    // open overlay portal
-  };
+  const _onLongPress = () => OverlayProvider.open(<UserModal {...props} />);
 
   return (
     <Container onLongPress={_onLongPress}>
