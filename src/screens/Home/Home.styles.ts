@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import {ViewEdgeInsets} from 'typings';
 
 export const Container = styled.View`
   flex: 1;
@@ -8,9 +9,11 @@ export const Container = styled.View`
   background-color: ${p => p.theme.colors.BACKGROUND};
 `;
 
-export const Button = styled.TouchableOpacity`
-  margin-top: 15px;
-  padding-vertical: 15px;
+export const Header = styled.View<ViewEdgeInsets>`
+  border-bottom-width: 1px;
+  padding-bottom: ${p => p.theme.scale(10)}px;
+  padding-top: ${p => p.theme.scale(p.insets.top)}px;
+  border-bottom-color: ${p => p.theme.colors.GRAY_SIX};
 `;
 
 export const Title = styled.Text.attrs({
