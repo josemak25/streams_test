@@ -3,8 +3,8 @@ import {ThemeProvider as Provider, DefaultTheme} from 'styled-components';
 import {Appearance, StatusBar} from 'react-native';
 import {hexToRGB, scale} from '@utils';
 import {FONTS, DARK_MODE_COLORS, LIGHT_MODE_COLORS} from './theme';
-import {setColorMode} from '../store/settings/actions';
 import {useSelector, useStore} from '../store';
+import {setColorMode} from '../store/settings/actions';
 import {IColorMode} from '../store/settings/models';
 
 const ThemeProvider: FunctionComponent = ({children}) => {

@@ -2,9 +2,11 @@ import {createContext, useContext} from 'react';
 import {IStateTree} from '@typings/store';
 import {settingsInitState} from './settings/reducers';
 import {SettingsActionTypes} from './settings/models';
+import {usersInitState} from './users/reducers';
+import {UsersActionTypes} from './users/models';
 
 // We define our type for the context properties right here
-export type DispatchTypes = SettingsActionTypes;
+export type DispatchTypes = SettingsActionTypes | UsersActionTypes;
 
 type IDispatcherType = (
   e: React.Dispatch<DispatchTypes>,
@@ -17,7 +19,8 @@ interface ContextProps {
 }
 
 const StoreContext = createContext<ContextProps>({
-  store: {settings: settingsInitState},
+  store: {settings: settingsInitState, users: usersInitState},
+
   dispatch: () => {},
 });
 
