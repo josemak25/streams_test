@@ -7,14 +7,10 @@
  */
 
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Home} from './src/screens';
 
 const App = () => {
-  return (
-    <View>
-      <Text>to change this screen and then come back to see your edits.</Text>
-    </View>
-  );
+  return <Home />;
 };
 
 export default App;
