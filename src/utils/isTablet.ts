@@ -7,9 +7,7 @@ import {Dimensions} from 'react-native';
  * @function isTablet
  * @returns boolean
  */
-const isTablet = () => {
+export const isTablet = () => {
   const {width, height} = Dimensions.get('window');
   return Math.min(width, height) > TABLET_DIMENSION;
 };
-
-export default isTablet;

@@ -1,5 +1,5 @@
 import {PixelRatio} from 'react-native';
-import isTablet from './isTablet';
+import {isTablet} from './isTablet';
 
 /**
  *
@@ -8,9 +8,7 @@ import isTablet from './isTablet';
  * @property size {number}
  * @returns number
  */
-const scale = (size: number) => {
+export const scale = (size: number) => {
   const density = isTablet() ? 1.2 : 1;
   return Math.round(PixelRatio.roundToNearestPixel(size * density));
 };
-
-export default scale;
