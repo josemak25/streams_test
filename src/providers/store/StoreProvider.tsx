@@ -1,6 +1,6 @@
 import React, {useReducer, FunctionComponent} from 'react';
 import {IStateTree} from '@typings/store';
-import {useCombinedReducers} from '@hooks';
+import {useCombinedReducers} from '@app/hooks';
 import {StoreContext, DispatchTypes} from './store';
 import {usersReducer, usersInitState} from './users/reducers';
 import {settingsReducer, settingsInitState} from './settings/reducers';

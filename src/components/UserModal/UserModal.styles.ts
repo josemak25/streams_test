@@ -1,7 +1,6 @@
 import {Dimensions} from 'react-native';
 import {BlurView} from '@react-native-community/blur';
 import styled from 'styled-components/native';
-import {TABLET_DIMENSION} from '@app/constants';
 
 const {width: FULL_WIDTH, height: FULL_HEIGHT} = Dimensions.get('window');
 
@@ -40,7 +39,7 @@ export const CloseButton = styled.TouchableOpacity`
   border-radius: ${p => p.theme.scale(5)}px;
   margin-vertical: ${p => p.theme.scale(15)}px;
   padding-vertical: ${p => p.theme.scale(20)}px;
-  width: ${p => p.theme.scale(TABLET_DIMENSION - 100)}px;
+  width: ${p => p.theme.scale(FULL_WIDTH - 60)}px;
   background-color: ${p => p.theme.colors.WHITE};
 `;
 
@@ -95,7 +94,6 @@ export const RowWrapper = styled.View`
   flex: 1;
   flex-direction: row;
   align-items: center;
-  margin-left: ${p => p.theme.scale(20)}px;
 `;
 
 export const Wrapper = styled.View`
@@ -103,12 +101,17 @@ export const Wrapper = styled.View`
   align-items: center;
 `;
 
+export const ModalWrapper = styled.View`
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Modal = styled.View.attrs({elevation: 2})`
   padding: ${p => p.theme.scale(20)}px;
   padding-bottom: ${p => p.theme.scale(10)}px;
   border-radius: ${p => p.theme.scale(10)}px;
   background-color: ${p => p.theme.colors.GRAY_SIX};
-  width: ${p => p.theme.scale(TABLET_DIMENSION - 90)}px;
-  height: ${p => p.theme.scale(TABLET_DIMENSION - 90)}px;
+  width: ${p => p.theme.scale(FULL_WIDTH - 60)}px;
+  height: ${p => p.theme.scale(FULL_WIDTH - 60)}px;
   box-shadow: 0px 2px 8px ${p => p.theme.hexToRGB(p.theme.colors.BLACK, 0.15)};
 `;
