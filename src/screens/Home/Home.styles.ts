@@ -5,7 +5,7 @@ export const Container = styled.View`
   padding: 20px;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: ${p => p.theme.colors.BACKGROUND};
 `;
 
 export const Button = styled.TouchableOpacity`
@@ -18,15 +18,15 @@ export const Title = styled.Text.attrs({
   allowFontScaling: true,
 })`
   text-align: center;
-  color: #000;
-  font-size: 25px;
-  line-height: 26px;
+  color: ${p => p.theme.colors.BLUE};
+  font-size: ${p => p.theme.scale(25)}px;
+  line-height: ${p => p.theme.scale(26)}px;
 `;
 
 export const Subtitle = styled(Title)`
-  color: #000;
-  font-size: 18px;
-  margin-top: 30px;
-  line-height: 21px;
-  margin-vertical: 15px;
+  color: ${p => p.theme.colors.BLACK};
+  font-size: ${p => p.theme.scale(18)}px;
+  margin-top: ${p => p.theme.scale(30)}px;
+  line-height: ${p => p.theme.scale(21)}px;
+  margin-vertical: ${p => p.theme.scale(15)}px;
 `;
