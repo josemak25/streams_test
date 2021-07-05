@@ -7,10 +7,10 @@
  */
 
 import React from 'react';
-import {Home} from './src/screens';
+import Navigation from './src/navigation';
 
 const App = () => {
-  return <Home />;
+  return <Navigation />;
 };
 
 export default App;

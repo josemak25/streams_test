@@ -1,8 +1,12 @@
 import React from 'react';
+import {StackScreenProps} from '@react-navigation/stack';
+import {RootStackParamList} from 'typings/screens';
 
 import {Title, Button, Subtitle, Container} from './Home.styles';
 
-export const Home = () => {
+type HomeProps = StackScreenProps<RootStackParamList, 'HomeScreen'>;
+
+const Home = () => {
   return (
     <Container>
       <Title>This screen doesn't exist.</Title>
@@ -12,3 +16,5 @@ export const Home = () => {
     </Container>
   );
 };
+
+export default Home;
