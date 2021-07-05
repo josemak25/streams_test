@@ -1,5 +1,5 @@
 import {SET_COLOR_MODE} from '../types';
-import {IColorMode} from '../models';
+import {IColorMode} from './interfaces';
 
 export interface ISetColorMode {
   type: typeof SET_COLOR_MODE;
