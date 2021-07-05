@@ -8,9 +8,14 @@
 
 import React from 'react';
 import Navigation from './src/navigation';
+import {GlobalProvider} from './src/providers';
 
 const App = () => {
-  return <Navigation />;
+  return (
+    <GlobalProvider>
+      <Navigation />
+    </GlobalProvider>
+  );
 };
 
 export default App;
